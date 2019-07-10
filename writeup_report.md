@@ -335,8 +335,8 @@ With the training methodology finalized, I added a checkpointer to save the mode
 and let the training run for 10 epochs.
 
 I would have experimented with more epochs but dealing with the online workspace was a pain due to the large training datasets
-(transferring all the files was not fun) and the long training times (even in GPU mode). My laptop also started literally falling
-apart after training several models.
+(transferring all the data files was not fun) and the long training times even in GPU mode meant training locally was more convenient. 
+However, my laptop started falling apart after training several models, so I did not re-train for more than 10 epochs.
 
 With the checkpointer, it would have been possible to let the model train for many more epochs, since
 we would be able to capture the model at the epoch with optimal validation loss.
